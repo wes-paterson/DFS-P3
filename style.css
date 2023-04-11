@@ -1,0 +1,66 @@
+#container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-image: url('crt overlay 02b.png');
+  background-size: 100% 100%;
+  border: none;
+}
+
+#video-background {
+  position: absolute;
+  /* top: 50%;
+  left: 42%; */
+  transform: translate(-45%, -34%);
+  /* min-width: 100%;
+  min-height: 100%; */
+  z-index: -1;
+}
+
+#video-background-alt {
+  position: absolute;
+  /* top: 50%;
+  left: 42%; */
+  transform: translate(-58%, -34%);
+  /* min-width: 100%;
+  min-height: 100%; */
+  z-index: -1;
+}
+
+.content {
+  text-align: center;
+  position: absolute;
+  top: 36%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 20px;
+}
+
+body {
+  overflow: hidden;
+}
+
+img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+
+.button-wrapper {
+  height: 26.5%;
+  width: 18%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000000;
+}
+
